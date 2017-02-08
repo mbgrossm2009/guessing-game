@@ -4,12 +4,13 @@ difficulty = gets.chomp.downcase
 
 score = 0
 if difficulty == "easy"
-  random_number = rand(10) + 1
-  puts "I'm thinking of a random number 1-10; Can you guess what i am thinking of?"
+  random_number = rand(30) + 1
+  puts "I'm thinking of a random number 1-30; Can you guess what i am thinking of?"
 
 elsif difficulty == "hard"
-  random_number = rand(20) + 1
-  puts "I'm thinking of a random number 1-20; Can you guess what i am thinking of?"
+  random_number = rand(100) + 1
+    binding.pry
+  puts "I'm thinking of a random number 1-100; Can you guess what i am thinking of?"
 end
 
 score += 1
